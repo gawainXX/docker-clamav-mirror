@@ -1,4 +1,4 @@
-FROM python:3.12.0a1
+FROM python:latest
 
 RUN pip install cvdupdate schedule
 RUN cvd config set --dbdir /clamav
