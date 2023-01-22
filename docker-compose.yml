@@ -8,11 +8,7 @@ services:
       - "8080:80"
     volumes:
       - 'clamav_database:/clamav'
-    restart_policy:
-        condition: any
-        delay: 5s
-        max_attempts: 3
-        window: 120s
+    restart: always
 
 volumes:
   clamav_database:
